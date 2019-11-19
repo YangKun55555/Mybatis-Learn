@@ -919,27 +919,177 @@
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
     <table id="231" parent="5" name="country"/>
-    <column id="232" parent="231" name="id">
+    <table id="232" parent="5" name="sys_privilege">
+      <Comment>权限表</Comment>
+    </table>
+    <table id="233" parent="5" name="sys_role">
+      <Comment>角色表</Comment>
+    </table>
+    <table id="234" parent="5" name="sys_role_privilege">
+      <Comment>角色权限关联表</Comment>
+    </table>
+    <table id="235" parent="5" name="sys_user">
+      <Comment>用户表</Comment>
+    </table>
+    <table id="236" parent="5" name="sys_user_role">
+      <Comment>用户角色关联表</Comment>
+    </table>
+    <column id="237" parent="231" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="233" parent="231" name="countryname">
+    <column id="238" parent="231" name="countryname">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="234" parent="231" name="countrycode">
+    <column id="239" parent="231" name="countrycode">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="235" parent="231" name="PRIMARY">
+    <key id="240" parent="231" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
+    <column id="241" parent="232" name="id">
+      <Position>1</Position>
+      <Comment>权限ID</Comment>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="242" parent="232" name="privilege_name">
+      <Position>2</Position>
+      <Comment>权限名称</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="243" parent="232" name="privilege_url">
+      <Position>3</Position>
+      <Comment>权限URL</Comment>
+      <DataType>varchar(200)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="244" parent="232" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="245" parent="233" name="id">
+      <Position>1</Position>
+      <Comment>角色ID</Comment>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="246" parent="233" name="role_name">
+      <Position>2</Position>
+      <Comment>角色名</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="247" parent="233" name="enabled">
+      <Position>3</Position>
+      <Comment>有效标志</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="248" parent="233" name="create_by">
+      <Position>4</Position>
+      <Comment>创建人</Comment>
+      <DataType>bigint(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="249" parent="233" name="create_time">
+      <Position>5</Position>
+      <Comment>创建时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="250" parent="233" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="251" parent="234" name="role_id">
+      <Position>1</Position>
+      <Comment>角色ID</Comment>
+      <DataType>bigint(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="252" parent="234" name="privilege_id">
+      <Position>2</Position>
+      <Comment>权限ID</Comment>
+      <DataType>bigint(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="253" parent="235" name="id">
+      <Position>1</Position>
+      <Comment>用户ID</Comment>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="254" parent="235" name="user_name">
+      <Position>2</Position>
+      <Comment>用户名</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="255" parent="235" name="user_password">
+      <Position>3</Position>
+      <Comment>密码</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="256" parent="235" name="user_email">
+      <Position>4</Position>
+      <Comment>邮箱</Comment>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="257" parent="235" name="user_info">
+      <Position>5</Position>
+      <Comment>简介</Comment>
+      <DataType>text|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="258" parent="235" name="head_img">
+      <Position>6</Position>
+      <Comment>头像</Comment>
+      <DataType>blob|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="259" parent="235" name="create_time">
+      <Position>7</Position>
+      <Comment>创建时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="260" parent="235" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="261" parent="236" name="user_id">
+      <Position>1</Position>
+      <Comment>用户ID</Comment>
+      <DataType>bigint(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="262" parent="236" name="role_id">
+      <Position>2</Position>
+      <Comment>角色ID</Comment>
+      <DataType>bigint(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
   </database-model>
 </dataSource>
