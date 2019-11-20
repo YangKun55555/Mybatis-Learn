@@ -3,6 +3,10 @@
         PUBLIC "-//mybatis.org//DTO Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+    <!--开启驼峰命名匹配-->
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
     <!--配置实体类所在包的别名-->
     <typeAliases>
         <package name="com.young.model"/>
@@ -24,5 +28,15 @@
     <!--配置映射文件所在地址-->
     <mappers>
         <mapper resource="mapper/CountryMapper.xml"/>
+        <mapper resource="mapper/UserMapper.xml"/>
+        <mapper resource="mapper/RoleMapper.xml"/>
+        <mapper resource="mapper/PrivilegeMapper.xml"/>
+        <mapper resource="mapper/UserRoleMapper.xml"/>
+        <mapper resource="mapper/RolePrivilegeMapper.xml"/>
     </mappers>
+    <!--如果所有XML映射文件都有接口类对应，则可以使用package节点定义接口所在包路径
+        1.查找package下所有接口，检查是否存在对应的命名空间（即对应的XML映射文件），如果有，抛出异常，如果没有，则进行以下操作
+        2.加载接口对应的XML映射文件，将XML中namespace对应的接口限定名转换为同名的xml文件路径，并处理该路径下的XML
+        3.处理接口中的注解方法
+    -->
 </configuration>
