@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTO Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--当mapper文件和xml文件关联时，namespace的值需要配置为接口的全限定名称，Mybatis内部就是通过这个值来将接口和XML关联起来-->
+<mapper namespace="com.young.mapper.UserMapper">
+    <!--配置Java实体类属性和查询结果列的对应关系-->
+    <resultMap id="userMap" type="SysUser">
+        <!--property:映射到列结果的属性，Java类中对应的属性名；column：数据库中列名，或列的别名-->
+        <id property="id" column="id"/>
+        <result property="userName" column="user_name"/>
+        <result property="userPassword" column="user_password"/>
+        <result property="userEmail" column="user_email"/>
+        <result property="userInfo" column="user_info"/>
+        <result property="headImg" column="head_img" jdbcType="BLOB"/>
+        <!--jdbcType：列对应的数据库类型，仅在插入、更新、删除操作中遇到为空的列时，需要用到这个属性
+            javaType：java类的全限定名，或者一个类型别名，如果映射到一个JavaBean，则可以自动识别，如果映射到一个HashMap，则需要指定javaType
+        -->
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+    <!--resultType:定义查询结果的返回类型,这个时候需要select返回的字段名称和resultType指定的Java类的属性名大写一致才可以-->
+    <select id="selectById" resultMap="userMap">
+        select * from sys_user where id=#{id}
+    </select>
+
+    <select id="selectAll" resultMap="userMap">
+        select * from sys_user
+    </select>
+
+    <select id="selectRolesByUserId" resultType="SysRole">
+        select r.id,r.role_name roleName,r.enabled,r.create_by createBy,r.create_time createTime,u.user_name
+        "user.userName",u.user_email "user.userEmail"
+        from sys_user u
+        inner join sys_user_role ur on u.id=ur.user_id
+        inner join sys_role r on r.id=ur.role_id
+        where u.id=#{userId}
+    </select>
+</mapper>
