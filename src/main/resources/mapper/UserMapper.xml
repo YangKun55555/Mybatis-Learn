@@ -35,4 +35,46 @@
         inner join sys_role r on r.id=ur.role_id
         where u.id=#{userId}
     </select>
+
+    <!--BLOB对应二进制数据流
+        date、time、datetime对应JDBC的DATE、TIME、TIMESTAMP
+    -->
+    <insert id="insert">
+        insert into sys_user
+        (id,user_name,user_password,user_email,user_info,head_img,create_time)
+        values (
+        #{id},#{userName},#{userPassword},#{userEmail},#{userInfo},#{headImg,jdbcType=BLOB},#{createTime,
+        jdbcType=TIMESTAMP}
+        )
+    </insert>
+
+    <!--useGeneratedKeys=true:mybatis会使用JDBC的getGeneratedKeys方法获取数据库内部生成的主键
+        keyProperty=id：将获取的主键值赋值给id属性
+    -->
+    <insert id="insert2" useGeneratedKeys="true" keyProperty="id">
+        insert into sys_user
+        (id,user_name,user_password,user_email,user_info,head_img,create_time)
+        values (
+        #{id},#{userName},#{userPassword},#{userEmail},#{userInfo},#{headImg,jdbcType=BLOB},#{createTime,
+        jdbcType=TIMESTAMP}
+        )
+    </insert>
+
+    <insert id="insert3">
+        insert into sys_user
+        (id,user_name,user_password,user_email,user_info,head_img,create_time)
+        values (
+        #{id},#{userName},#{userPassword},#{userEmail},#{userInfo},#{headImg,jdbcType=BLOB},#{createTime,
+        jdbcType=TIMESTAMP}
+        )
+        <!--keyColumn：定义需要作为主键返回的数据表的列名
+            keyProperty：定义主键对应的Java类中属性名
+            resultType：定义主键返回时的数据类型
+            order：与数据库有关，mysql是after
+            last_insert_id（）：mysql用于回去数据库中最后插入数据的ID值
+        -->
+        <selectKey keyColumn="id" resultType="long" keyProperty="id" order="AFTER">
+            SELECT last_insert_id()
+        </selectKey>
+    </insert>
 </mapper>
