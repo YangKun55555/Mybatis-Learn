@@ -73,8 +73,19 @@
             order：与数据库有关，mysql是after
             last_insert_id（）：mysql用于回去数据库中最后插入数据的ID值
         -->
-        <selectKey keyColumn="user_name" resultType="string" keyProperty="customKey" order="AFTER">
+        <selectKey keyColumn="id" resultType="long" keyProperty="id" order="AFTER">
             SELECT last_insert_id()
         </selectKey>
     </insert>
+
+    <update id="updateById">
+        update sys_user
+        set user_name=#{userName},
+        user_password=#{userPassword},
+        user_email=#{userEmail},
+        user_info=#{userInfo},
+        head_img=#{headImg,jdbcType=BLOB},
+        create_time=#{createTime,jdbcType=TIMESTAMP}
+        where id=#{id}
+    </update>
 </mapper>
