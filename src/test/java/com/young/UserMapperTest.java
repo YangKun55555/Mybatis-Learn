@@ -231,4 +231,25 @@ public class UserMapperTest extends BaseMapperTest {
 			sqlSession.close();
 		}
 	}
+
+	@Test
+	public void testSelectByIdOrUserName(){
+		SqlSession sqlSession = getSqlSession();
+		try {
+			UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+			SysUser query = new SysUser();
+			query.setId(1L);
+			query.setUserName("admin");
+			SysUser user = userMapper.selectByIdOrUserName(query);
+			Assert.assertNotNull(user);
+			query.setId(null);
+			user = userMapper.selectByIdOrUserName(query);
+			Assert.assertNotNull(user);
+			query.setUserName(null);
+			user = userMapper.selectByIdOrUserName(query);
+			Assert.assertNull(user);
+		}finally {
+			sqlSession.close();
+		}
+	}
 }
