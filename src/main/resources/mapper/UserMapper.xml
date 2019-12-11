@@ -53,9 +53,18 @@
     -->
     <insert id="insert2" useGeneratedKeys="true" keyProperty="id">
         insert into sys_user
-        (id,user_name,user_password,user_email,user_info,head_img,create_time)
+        (user_name,user_password,
+        /*在insert中，列的部分增加了if条件，则values部分也要增加相同的if条件，保证完全匹配*/
+        <if test="userEmail !=null and userEmail !=''">
+            user_email,
+        </if>
+        user_info,head_img,create_time)
         values (
-        #{id},#{userName},#{userPassword},#{userEmail},#{userInfo},#{headImg,jdbcType=BLOB},#{createTime,
+        #{userName},#{userPassword},
+        <if test="userEmail !=null and userEmail !=''">
+            #{userEmail},
+        </if>
+        #{userInfo},#{headImg,jdbcType=BLOB},#{createTime,
         jdbcType=TIMESTAMP}
         )
     </insert>
@@ -105,4 +114,44 @@
         inner join sys_role r on ur.role_id=r.id
         where u.id=#{userId} and r.enabled=#{enabled}
     </select>
+
+    <select id="selectByUser" resultMap="userMap">
+        select id,user_name,user_password,user_email,user_info,head_img,create_time
+        from sys_user
+        /*where 1=1 当if都不满足时，保证sql语法规范，后面使用where标签可以替代这种写法*/
+        where 1=1
+        <if test="userName != null and userName != ''">
+            and user_name like concat('%',#{userName},'%')
+        </if>
+        <if test="userEmail !=null and userEmail !=''">
+            and user_email =#{userEmail}
+        </if>
+    </select>
+
+    <update id="updateByIdSelective">
+        update sys_user
+        set
+          <if test="userName !=null and userName !=''">
+              user_name=#{userName},
+          </if>
+        <if test="userPassword !=null and userPassword !=''">
+            user_password=#{userPassword},
+        </if>
+        <if test="userEmail !=null and userEmail !=''">
+            user_email=#{userEmail},
+        </if>
+        <if test="userInfo !=null and userInfo !=''">
+            user_info=#{userInfo},
+        </if>
+        <if test="headImg !=null">
+            head_img=#{headImg,jdbcType=BLOB},
+        </if>
+        <if test="createTime !=null">
+            create_time=#{createTime.jdbcType=TIMESTAMP},
+        </if>
+        /*处理都为null或者只有一个满足时，sql规范问题，可以使用set标签来处理*/
+        id=#{id}
+        where id=#{id}
+
+    </update>
 </mapper>

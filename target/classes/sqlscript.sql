@@ -67,3 +67,6 @@ insert into sys_role_privilege values ('1','3');
 insert into sys_role_privilege values ('1','2');
 insert into sys_role_privilege values ('2','4');
 insert into sys_role_privilege values ('2','5');
+
+alter table sys_user modify column user_email varchar(50) null default 'test@mybatis.tk' comment '邮箱' after
+  user_password;

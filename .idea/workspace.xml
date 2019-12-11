@@ -4,6 +4,7 @@
     <list default="true" id="7890696c-b1fb-4d4f-9271-cc42818bbf2d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/young/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/young/mapper/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sqlscript.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sqlscript.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/young/UserMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/young/UserMapperTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -58,47 +59,47 @@
     <session id="-946052415">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.14" value="1" />
-          <entry key="project.open.time.2" value="3" />
-          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.2" value="4" />
+          <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3043" />
-          <entry key="sql" value="1791" />
+          <entry key="java" value="3835" />
+          <entry key="sql" value="1889" />
           <entry key="txt" value="7" />
-          <entry key="xml" value="3188" />
+          <entry key="xml" value="3999" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3043" />
+          <entry key="JAVA" value="3835" />
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="SQL" value="1551" />
+          <entry key="SQL" value="1672" />
           <entry key="Scratch" value="266" />
-          <entry key="XML" value="3162" />
+          <entry key="XML" value="3950" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="31" />
           <entry key="properties" value="1" />
-          <entry key="sql" value="7" />
-          <entry key="sys_user" value="1" />
+          <entry key="sql" value="9" />
+          <entry key="sys_user" value="2" />
           <entry key="tld" value="1" />
           <entry key="xml" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Database Element" value="1" />
+          <entry key="Database Element" value="2" />
           <entry key="JAVA" value="31" />
           <entry key="Properties" value="1" />
-          <entry key="SQL" value="6" />
+          <entry key="SQL" value="8" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="26" />
         </counts>
@@ -110,8 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="95" selection-start-line="95" selection-end-line="106" selection-end-column="13" />
+            <state relative-caret-position="493">
+              <caret line="69" column="13" lean-forward="true" selection-start-line="53" selection-start-column="4" selection-end-line="69" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -119,8 +120,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/young/mapper/UserMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="31" column="116" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="116" />
+            <state relative-caret-position="209">
+              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -131,8 +132,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/young/UserMapperTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="162" column="10" selection-start-line="162" selection-start-column="10" selection-end-line="162" selection-end-column="10" />
+            <state relative-caret-position="443">
+              <caret line="232" column="5" lean-forward="true" selection-start-line="214" selection-start-column="4" selection-end-line="232" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -141,9 +142,36 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/sqlscript.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="488">
+              <caret line="70" selection-start-line="70" selection-end-line="71" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://790e34ad-6cd5-4eab-9687-2380c1eb8d32/schema/mybatis/table/sys_user">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://790e34ad-6cd5-4eab-9687-2380c1eb8d32/schema/mybatis/table/sys_user.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/young/model/SysUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
+            <state relative-caret-position="290">
               <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
             </state>
           </provider>
@@ -170,7 +198,6 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/790e34ad-6cd5-4eab-9687-2380c1eb8d32/console.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/CountryMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/young/model/Country.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/sqlscript.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/young/model/SysUserRole.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/young/model/SysRolePrivilege.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/young/model/SysPrivilege.java" />
@@ -188,8 +215,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/young/model/SysRole.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/young/model/SysUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/young/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/sqlscript.sql" />
         <option value="$PROJECT_DIR$/src/test/java/com/young/UserMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" />
       </list>
     </option>
   </component>
@@ -234,6 +262,24 @@
               <item name="mybatis-learn" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mybatis-Learn" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="mybatis-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mybatis-Learn" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mybatis-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mybatis-Learn" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mybatis-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mybatis-Learn" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -274,7 +320,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserMapperTest.testSelectRolesByUserIdAndEnabled">
+  <component name="RunManager" selected="JUnit.UserMapperTest.testUpdate2Selective">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -287,7 +333,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserMapperTest.testDeleteById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserMapperTest.testSelectById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis-learn" />
       <extension name="coverage">
         <pattern>
@@ -297,14 +343,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.young" />
       <option name="MAIN_CLASS_NAME" value="com.young.UserMapperTest" />
-      <option name="METHOD_NAME" value="testDeleteById" />
+      <option name="METHOD_NAME" value="testSelectById" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserMapperTest.testInsert2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserMapperTest.testSelectByUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis-learn" />
       <extension name="coverage">
         <pattern>
@@ -314,24 +360,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.young" />
       <option name="MAIN_CLASS_NAME" value="com.young.UserMapperTest" />
-      <option name="METHOD_NAME" value="testInsert2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserMapperTest.testInsert3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-learn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.young.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.young" />
-      <option name="MAIN_CLASS_NAME" value="com.young.UserMapperTest" />
-      <option name="METHOD_NAME" value="testInsert3" />
+      <option name="METHOD_NAME" value="testSelectByUser" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -355,7 +384,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserMapperTest.testUpdateById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserMapperTest.testUpdate2Selective" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis-learn" />
       <extension name="coverage">
         <pattern>
@@ -365,7 +394,24 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.young" />
       <option name="MAIN_CLASS_NAME" value="com.young.UserMapperTest" />
-      <option name="METHOD_NAME" value="testUpdateById" />
+      <option name="METHOD_NAME" value="testUpdate2Selective" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserMapperTest.testUpdateByIdSelective" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-learn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.young.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.young" />
+      <option name="MAIN_CLASS_NAME" value="com.young.UserMapperTest" />
+      <option name="METHOD_NAME" value="testUpdateByIdSelective" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -396,19 +442,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.UserMapperTest.testInsert2" />
-      <item itemvalue="JUnit.UserMapperTest.testInsert3" />
-      <item itemvalue="JUnit.UserMapperTest.testUpdateById" />
-      <item itemvalue="JUnit.UserMapperTest.testDeleteById" />
       <item itemvalue="JUnit.UserMapperTest.testSelectRolesByUserIdAndEnabled" />
+      <item itemvalue="JUnit.UserMapperTest.testSelectByUser" />
+      <item itemvalue="JUnit.UserMapperTest.testUpdateByIdSelective" />
+      <item itemvalue="JUnit.UserMapperTest.testSelectById" />
+      <item itemvalue="JUnit.UserMapperTest.testUpdate2Selective" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserMapperTest.testUpdate2Selective" />
+        <item itemvalue="JUnit.UserMapperTest.testUpdateByIdSelective" />
+        <item itemvalue="JUnit.UserMapperTest.testSelectById" />
+        <item itemvalue="JUnit.UserMapperTest.testSelectByUser" />
         <item itemvalue="JUnit.UserMapperTest.testSelectRolesByUserIdAndEnabled" />
-        <item itemvalue="JUnit.UserMapperTest.testDeleteById" />
-        <item itemvalue="JUnit.UserMapperTest.testUpdateById" />
-        <item itemvalue="JUnit.UserMapperTest.testInsert3" />
-        <item itemvalue="JUnit.UserMapperTest.testInsert2" />
       </list>
     </recent_temporary>
   </component>
@@ -427,56 +473,59 @@
       <workItem from="1574144803313" duration="11459000" />
       <workItem from="1574666038987" duration="3068000" />
       <workItem from="1574922259444" duration="1567000" />
-      <workItem from="1574924408307" duration="2568000" />
+      <workItem from="1574924408307" duration="3787000" />
+      <workItem from="1575981933801" duration="959000" />
+      <workItem from="1576030031442" duration="2048000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserMapperTest_testInsert3 - 2019.11.25 at 15h 46m 09s.xml">
-      <configuration name="UserMapperTest.testInsert3" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserMapperTest_testInsert3 - 2019.11.25 at 15h 47m 05s.xml">
-      <configuration name="UserMapperTest.testInsert3" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserMapperTest_testInsert3 - 2019.11.25 at 15h 48m 09s.xml">
-      <configuration name="UserMapperTest.testInsert3" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserMapperTest_testInsert3 - 2019.11.25 at 15h 48m 35s.xml">
-      <configuration name="UserMapperTest.testInsert3" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserMapperTest_testUpdateById - 2019.11.28 at 14h 46m 57s.xml">
-      <configuration name="UserMapperTest.testUpdateById" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserMapperTest_testUpdateById - 2019.11.28 at 14h 47m 21s.xml">
-      <configuration name="UserMapperTest.testUpdateById" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserMapperTest_testDeleteById - 2019.11.28 at 15h 06m 03s.xml">
-      <configuration name="UserMapperTest.testDeleteById" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserMapperTest_testSelectRolesByUserIdAndEnabled - 2019.11.28 at 16h 09m 26s.xml">
-      <configuration name="UserMapperTest.testSelectRolesByUserIdAndEnabled" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UserMapperTest_testSelectRolesByUserIdAndEnabled - 2019.11.28 at 16h 11m 38s.xml">
       <configuration name="UserMapperTest.testSelectRolesByUserIdAndEnabled" configurationId="JUnit" />
     </history-entry>
     <history-entry file="UserMapperTest_testSelectRolesByUserIdAndEnabled - 2019.11.28 at 16h 12m 22s.xml">
       <configuration name="UserMapperTest.testSelectRolesByUserIdAndEnabled" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UserMapperTest_testSelectByUser - 2019.12.10 at 20h 54m 34s.xml">
+      <configuration name="UserMapperTest.testSelectByUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserMapperTest_testUpdateByIdSelective - 2019.12.11 at 10h 10m 10s.xml">
+      <configuration name="UserMapperTest.testUpdateByIdSelective" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserMapperTest_testUpdateByIdSelective - 2019.12.11 at 10h 13m 22s.xml">
+      <configuration name="UserMapperTest.testUpdateByIdSelective" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserMapperTest_testSelectById - 2019.12.11 at 10h 13m 56s.xml">
+      <configuration name="UserMapperTest.testSelectById" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserMapperTest_testUpdateByIdSelective - 2019.12.11 at 10h 23m 22s.xml">
+      <configuration name="UserMapperTest.testUpdateByIdSelective" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserMapperTest_testUpdateByIdSelective - 2019.12.11 at 10h 25m 22s.xml">
+      <configuration name="UserMapperTest.testUpdateByIdSelective" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserMapperTest_testUpdate2Selective - 2019.12.11 at 10h 33m 59s.xml">
+      <configuration name="UserMapperTest.testUpdate2Selective" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserMapperTest_testUpdate2Selective - 2019.12.11 at 10h 34m 18s.xml">
+      <configuration name="UserMapperTest.testUpdate2Selective" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23191000" />
+    <option name="totallyTimeSpent" value="27417000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="-343" width="1920" height="1080" extended-state="0" />
+    <frame x="-1920" y="-180" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26411074" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26943558" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.328807" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3986421" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -517,6 +566,11 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>userMapper.selectById(1L)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>user</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -536,19 +590,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="37" column="20" lean-forward="true" selection-end-line="45" />
         </state>
       </provider>
-    </entry>
-    <entry file="das://790e34ad-6cd5-4eab-9687-2380c1eb8d32/schema/mybatis/table/sys_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CountryMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -657,44 +704,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/sqlscript.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/young/model/SysUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/young/mapper/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="31" column="116" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="116" />
+        <state relative-caret-position="209">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/young/model/SysUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://790e34ad-6cd5-4eab-9687-2380c1eb8d32/schema/mybatis/table/sys_user.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://790e34ad-6cd5-4eab-9687-2380c1eb8d32/schema/mybatis/table/sys_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sqlscript.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="70" selection-start-line="70" selection-end-line="71" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="95" selection-start-line="95" selection-end-line="106" selection-end-column="13" />
+        <state relative-caret-position="493">
+          <caret line="69" column="13" lean-forward="true" selection-start-line="53" selection-start-column="4" selection-end-line="69" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/young/UserMapperTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="162" column="10" selection-start-line="162" selection-start-column="10" selection-end-line="162" selection-end-column="10" />
+        <state relative-caret-position="443">
+          <caret line="232" column="5" lean-forward="true" selection-start-line="214" selection-start-column="4" selection-end-line="232" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
