@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7890696c-b1fb-4d4f-9271-cc42818bbf2d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/young/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/young/mapper/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/young/UserMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/young/UserMapperTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -71,16 +69,16 @@
           <entry key="java" value="3995" />
           <entry key="sql" value="1932" />
           <entry key="txt" value="7" />
-          <entry key="xml" value="4162" />
+          <entry key="xml" value="4252" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="3995" />
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="SQL" value="1677" />
+          <entry key="SQL" value="1679" />
           <entry key="Scratch" value="309" />
-          <entry key="XML" value="4108" />
+          <entry key="XML" value="4196" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -110,8 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="172" column="13" lean-forward="true" selection-start-line="157" selection-start-column="4" selection-end-line="172" selection-end-column="13" />
+            <state relative-caret-position="457">
+              <caret line="152" column="19" selection-start-line="152" selection-start-column="19" selection-end-line="152" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -131,8 +129,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/young/UserMapperTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="253" column="5" lean-forward="true" selection-start-line="234" selection-start-column="4" selection-end-line="253" selection-end-column="5" />
+            <state relative-caret-position="445">
+              <caret line="237" column="13" lean-forward="true" selection-start-line="237" selection-start-column="13" selection-end-line="237" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -197,8 +195,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/sqlscript.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/790e34ad-6cd5-4eab-9687-2380c1eb8d32/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/young/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/young/UserMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" />
       </list>
     </option>
   </component>
@@ -223,7 +221,7 @@
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="-1920" />
-    <option name="y" value="-343" />
+    <option name="y" value="-180" />
     <option name="width" value="1920" />
     <option name="height" value="1080" />
   </component>
@@ -305,7 +303,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserMapperTest.testSelectByIdOrUserName">
+  <component name="RunManager" selected="JUnit.UserMapperTest.testUpdateByIdSelective">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -435,11 +433,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserMapperTest.testUpdateByIdSelective" />
+        <item itemvalue="JUnit.UserMapperTest.testSelectByUser" />
         <item itemvalue="JUnit.UserMapperTest.testSelectByIdOrUserName" />
         <item itemvalue="JUnit.UserMapperTest.testUpdate2Selective" />
-        <item itemvalue="JUnit.UserMapperTest.testUpdateByIdSelective" />
         <item itemvalue="JUnit.UserMapperTest.testSelectById" />
-        <item itemvalue="JUnit.UserMapperTest.testSelectByUser" />
       </list>
     </recent_temporary>
   </component>
@@ -461,17 +459,11 @@
       <workItem from="1574924408307" duration="3787000" />
       <workItem from="1575981933801" duration="959000" />
       <workItem from="1576030031442" duration="2725000" />
-      <workItem from="1576045545147" duration="535000" />
+      <workItem from="1576045545147" duration="8412000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserMapperTest_testSelectRolesByUserIdAndEnabled - 2019.11.28 at 16h 12m 22s.xml">
-      <configuration name="UserMapperTest.testSelectRolesByUserIdAndEnabled" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserMapperTest_testSelectByUser - 2019.12.10 at 20h 54m 34s.xml">
-      <configuration name="UserMapperTest.testSelectByUser" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UserMapperTest_testUpdateByIdSelective - 2019.12.11 at 10h 10m 10s.xml">
       <configuration name="UserMapperTest.testUpdateByIdSelective" configurationId="JUnit" />
     </history-entry>
@@ -496,9 +488,15 @@
     <history-entry file="UserMapperTest_testSelectByIdOrUserName - 2019.12.11 at 14h 31m 47s.xml">
       <configuration name="UserMapperTest.testSelectByIdOrUserName" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UserMapperTest_testSelectByUser - 2019.12.11 at 14h 54m 22s.xml">
+      <configuration name="UserMapperTest.testSelectByUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserMapperTest_testUpdateByIdSelective - 2019.12.11 at 14h 57m 37s.xml">
+      <configuration name="UserMapperTest.testUpdateByIdSelective" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28629000" />
+    <option name="totallyTimeSpent" value="36506000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="-180" width="1920" height="1080" extended-state="0" />
@@ -733,15 +731,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="172" column="13" lean-forward="true" selection-start-line="157" selection-start-column="4" selection-end-line="172" selection-end-column="13" />
+        <state relative-caret-position="457">
+          <caret line="152" column="19" selection-start-line="152" selection-start-column="19" selection-end-line="152" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/young/UserMapperTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="253" column="5" lean-forward="true" selection-start-line="234" selection-start-column="4" selection-end-line="253" selection-end-column="5" />
+        <state relative-caret-position="445">
+          <caret line="237" column="13" lean-forward="true" selection-start-line="237" selection-start-column="13" selection-end-line="237" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -118,39 +118,40 @@
     <select id="selectByUser" resultMap="userMap">
         select id,user_name,user_password,user_email,user_info,head_img,create_time
         from sys_user
-        /*where 1=1 当if都不满足时，保证sql语法规范，后面使用where标签可以替代这种写法*/
-        where 1=1
-        <if test="userName != null and userName != ''">
-            and user_name like concat('%',#{userName},'%')
-        </if>
-        <if test="userEmail !=null and userEmail !=''">
-            and user_email =#{userEmail}
-        </if>
+        /*where标签中有返回值，就插入一个where，如果where后面的字符串是以and或者or开头，就将自动它们剔除*/
+        <where>
+            <if test="userName != null and userName != ''">
+                and user_name like concat('%',#{userName},'%')
+            </if>
+            <if test="userEmail !=null and userEmail !=''">
+                and user_email =#{userEmail}
+            </if>
+        </where>
     </select>
 
     <update id="updateByIdSelective">
         update sys_user
-        set
-          <if test="userName !=null and userName !=''">
-              user_name=#{userName},
-          </if>
-        <if test="userPassword !=null and userPassword !=''">
-            user_password=#{userPassword},
-        </if>
-        <if test="userEmail !=null and userEmail !=''">
-            user_email=#{userEmail},
-        </if>
-        <if test="userInfo !=null and userInfo !=''">
-            user_info=#{userInfo},
-        </if>
-        <if test="headImg !=null">
-            head_img=#{headImg,jdbcType=BLOB},
-        </if>
-        <if test="createTime !=null">
-            create_time=#{createTime.jdbcType=TIMESTAMP},
-        </if>
-        /*处理都为null或者只有一个满足时，sql规范问题，可以使用set标签来处理*/
-        id=#{id}
+        <set>
+            <if test="userName !=null and userName !=''">
+                user_name=#{userName},
+            </if>
+            <if test="userPassword !=null and userPassword !=''">
+                user_password=#{userPassword},
+            </if>
+            <if test="userEmail !=null and userEmail !=''">
+                user_email=#{userEmail},
+            </if>
+            <if test="userInfo !=null and userInfo !=''">
+                user_info=#{userInfo},
+            </if>
+            <if test="headImg !=null">
+                head_img=#{headImg,jdbcType=BLOB},
+            </if>
+            <if test="createTime !=null">
+                create_time=#{createTime.jdbcType=TIMESTAMP},
+            </if>
+            id=#{id}
+        </set>
         where id=#{id}
 
     </update>
