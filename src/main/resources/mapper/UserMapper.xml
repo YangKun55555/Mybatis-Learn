@@ -121,7 +121,8 @@
         /*where标签中有返回值，就插入一个where，如果where后面的字符串是以and或者or开头，就将自动它们剔除*/
         <where>
             <if test="userName != null and userName != ''">
-                and user_name like concat('%',#{userName},'%')
+                <bind name="userNameLike" value="'%'+userName+'%'"/>
+                and user_name like #{userNameLike}
             </if>
             <if test="userEmail !=null and userEmail !=''">
                 and user_email =#{userEmail}
