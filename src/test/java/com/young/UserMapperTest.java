@@ -7,9 +7,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author YangKun
@@ -284,6 +282,24 @@ public class UserMapperTest extends BaseMapperTest {
 			}
 			int result = userMapper.insertList(userList);
 			Assert.assertEquals(2,result);
+		}finally {
+			sqlSession.rollback();
+			sqlSession.close();
+		}
+	}
+
+	@Test
+	public void testUpdateByMap(){
+		SqlSession sqlSession = getSqlSession();
+		try {
+			UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+			Map<String,Object> map=new HashMap<>();
+			map.put("id",1L);
+			map.put("user_email","test@mybatis.tk");
+			map.put("user_password","12345678");
+			userMapper.updateByMap(map);
+			SysUser user = userMapper.selectById(1L);
+			Assert.assertEquals("test@mybatis.tk",user.getUserEmail());
 		}finally {
 			sqlSession.rollback();
 			sqlSession.close();

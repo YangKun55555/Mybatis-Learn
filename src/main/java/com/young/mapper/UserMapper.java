@@ -5,6 +5,7 @@ import com.young.model.SysUser;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author YangKun
@@ -40,4 +41,6 @@ public interface UserMapper {
 	List<SysUser> selectByIdList(List<Long> idList);
 
 	int insertList(List<SysUser> userList);
+
+	int updateByMap(Map<String,Object> map);
 }
