@@ -4,5 +4,16 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--定义当前映射文件所在的命名空间-->
 <mapper namespace="com.young.mapper.RoleMapper">
+    <resultMap id="RoleMap" type="SysRole">
+        <!--role相关属性-->
+        <id property="id" column="id"/>
+        <result property="roleName" column="name"/>
+        <result property="enabled" column="enabled"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
 
+    <select id="selectRoleById" resultMap="RoleMap">
+        select * from sys_role where id=#{id}
+    </select>
 </mapper>
