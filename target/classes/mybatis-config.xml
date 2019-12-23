@@ -6,6 +6,7 @@
     <!--开启驼峰命名匹配-->
     <settings>
         <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <setting name="aggressiveLazyLoading" value="false"/>
     </settings>
     <!--配置实体类所在包的别名-->
     <typeAliases>
